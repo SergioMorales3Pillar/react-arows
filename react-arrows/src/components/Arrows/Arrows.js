@@ -33,7 +33,8 @@ const DraggableBox = ({id}) => {
         <Draggable  start={{  position: {
           x: 500,
           y: 250
-        }}}  onDrag={updateXarrow} onStop={updateXarrow}>
+        }}}
+        onClick={console.log("here")}  onDrag={updateXarrow} onStop={updateXarrow}>
 
             <div id={id} style={getStyle()}>
               {console.log(id)}
